@@ -1,6 +1,11 @@
 <p id="notice"><%= notice %></p>
 
 <p>
+<%= link_to '< All Submissions', submissions_path %>
+<%= link_to 'Edit', edit_submission_path(@submission) %>
+</p>
+<br>
+<p>
   <strong>Name:</strong>
   <%= @submission.name %>
 </p>
@@ -19,6 +24,3 @@
   <strong>Message:</strong>
   <%= @submission.message %>
 </p>
-
-<%= link_to 'Edit', edit_submission_path(@submission) %> |
-<%= link_to 'Back', submissions_path %>

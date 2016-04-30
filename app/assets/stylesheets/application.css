@@ -1,15 +1,50 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body, html{
+	margin: 0;
+	padding: 0;
+}
+
+body, a, input, textarea{
+	font-size: 12px;
+	text-decoration: none;
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 300;
+}
+
+a, input[type="submit"]{
+	color: #fff;
+	background-color: #56779a;
+	padding: 8px 12px;
+	margin-right: 2px;
+	border-radius: 2px;
+	border: none;
+}
+
+input, textarea{
+	padding: 10px;
+	border-radius: 2px;
+	border: 2px solid #ccc;
+	outline: none;
+}
+
+table{
+	text-align: left;
+	border-spacing: 10px 5px;
+	padding: 20px 0px;
+}
+
+
+.wrapper{
+	width: 1000px;
+	padding: 20px 20px;
+	margin: auto;
+}
+
+form .field{
+	display: block;
+	margin-bottom: 10px;
+}
+form .field label{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	display: inline-block;
+}
